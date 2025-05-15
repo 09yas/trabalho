@@ -14,6 +14,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    
   }
   
   nav {
@@ -21,7 +22,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: sticky;
     top: 60px;
     z-index: 999;
   }
@@ -42,6 +42,8 @@ body {
     max-width: 1000px;
     margin: auto;
     border-bottom: 1px solid #333;
+    
+    
   }
   
   h2 {
@@ -53,9 +55,57 @@ body {
       flex-direction: column;
     }
   }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header h1 {
+    animation: fadeInUp 3s ease forwards;
+  }
+
+  section {
+    margin-bottom: 60px;
+    scroll-margin-top: 120px;
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
   
   
   
+  h1, h2 {
+    color: #fff;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  h1:hover, h2:hover {
+    text-shadow: 0 0 20px #ff1a1a, 0 0 30px #ff1a1a;
+  }
+
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif') repeat;
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+  }
+
   
   
   
