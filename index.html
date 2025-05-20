@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raio-X do Sistema: Netflix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Raio-X do Sistema: Netflix - Processo de Reprodução de Conteúdo</h1>
+    <nav>
+      <a href="#introducao">Introdução</a>
+      <a href="#passo1">Passo 1</a>
+      <a href="#passo2">Passo 2</a>
+      <a href="#passo3">Passo 3</a>
+      <a href="#passo4">Passo 4</a>
+      <a href="#passo5">Passo 5</a>
+      <a href="#passo6">Passo 6</a>
+      <a href="#passo7">Passo 7</a>
+      <a href="#passo8">Passo 8</a>
+      <a href="#passo9">Passo 9</a>
+      <a href="#passo10">Passo 10</a>
+      <a href="#conclusao">Conclusão</a>
+    </nav>
+  </header>
+
+  <section id="introducao">
+    <h2>Introdução ao Sistema Analisado</h2>
+    <p>A Netflix é uma plataforma de streaming de vídeos sob demanda amplamente utilizada mundialmente. Seu sistema permite que usuários explorem um catálogo vasto e diversificado de filmes, séries, documentários e produções originais, acessíveis por meio de uma assinatura mensal. A plataforma é compatível com diversos dispositivos, como smart TVs, computadores, tablets, smartphones e consoles de videogame, oferecendo uma experiência multiplataforma fluida e personalizada. Esta análise detalha o fluxo principal do sistema — desde o login até a reprodução de conteúdo — além de propor melhorias e modelos técnicos.</p>
+  </section>
+
+  <section id="passo1">
+    <h2>Passo 1: Caminho Principal (BPMN)</h2>
+    <ol>
+      <li>Abertura do app</li>
+      <li>Login/Registro</li>
+      <li>Exploração de catálogo</li>
+      <li>Seleção de título</li>
+      <li>Reprodução de vídeo</li>
+      <li>Registro no histórico e sugestões personalizadas</li>
+    </ol>
+    <img src="diagramanetflix.drawio.png" alt="Diagrama BPMN Netflix" style="max-width: 100%; border: 1px solid #ccc; margin-top: 20px;">
+  </section>
+
+  <section id="passo2">
+    <h2>Passo 2: Organização de Dados</h2>
+    <ul>
+      <li><strong>Usuário:</strong> ID, nome, email, plano, preferências</li>
+      <li><strong>Título:</strong> ID, nome, gênero, classificação, duração</li>
+      <li><strong>Histórico:</strong> usuário, título, data, tempo assistido</li>
+    </ul>
+    <img src="Diagrama dois.drawio.png"  style="max-width: 100%; border: 1px solid #ccc; margin-top: 20px;">
+  </section>
+
+  <section id="passo3">
+    <h2>Passo 3: Quem Faz o Quê? (Autonomia)</h2>
+    <ul>
+      <li><strong>Usuário:</strong> Interage com a interface, realiza buscas, escolhe conteúdos, avalia e fornece feedback indireto através do consumo.</li>
+      <li><strong>Admin:</strong>Cadastra e gerencia títulos, define regras de recomendação, monitora métricas de engajamento e cuida de licenças regionais.</li>
+      <li><strong>Sistema:</strong>Automatiza sugestões com algoritmos, personaliza a interface conforme perfil, registra histórico e monitora comportamento para melhorar a experiência.</li>
+    </ul>
+  </section>
+
+  <section id="passo4">
+    <h2>Passo 4: Choveram Ideias! (Iniciativa)</h2>
+    <ul>
+      <li>Recomendações por humor</li>
+      <li>Assistir offline em vários dispositivos</li>
+      <li>Sessões sincronizadas com outros perfis da família(assistir junto remotamente)</li>
+      <li>Criação de perfis temporários para visitantes</li>
+      <li>Feedback direto após reprodução</li>
+    </ul>
+  </section>
+
+  <section id="passo5">
+    <h2>Passo 5: UX (Facilidade de Uso)</h2>
+    <p><strong>Positivos:</strong> Interface limpa,Continuar o vídeo de onde parou em outro aparelho,Sugestões na busca conforme o usuário digita.</p>
+    <p><strong>Melhorias:</strong> Permitir organizar "Minha Lista" por categorias,Suporte a leitores de tela e comandos de voz,Chatbot de ajuda diretamente na interface.</p>
+  </section>
+
+  <section id="passo6">
+    <h2>Passo 6: Conectividade e  Interoperabilidade</h2>
+    <ul>
+      <li>O app se adapta a diferentes sistemas operacionais, como Android TV e consoles como Xbox e PlayStation, garantindo uma experiência uniforme.</li>
+      <li>A plataforma pode utilizar serviços de inteligência artificial externa (como AWS AI) para refinar as sugestões de conteúdo em tempo real.</li>
+      <li>A sincronização de vídeos para modo offline exige uma interoperabilidade entre o sistema de autenticação e o armazenamento interno do dispositivo, garantindo segurança e expirando conteúdos baixados conforme os direitos autorais.</li>
+    </ul>
+  </section>
+
+  <section id="passo7">
+    <h2>Passo 7: Desenhos Técnicos (UML)</h2>
+    <ul>
+      <img src="Caso de uso (UML).drawio.png"  style="max-width: 100%; border: 1px solid #ccc; margin-top: 20px;">
+    </ul>
+  </section>
+
+  <section id="passo8">
+    <h2>Passo 8: Recapitulando a Teoria</h2>
+    <p>Neste projeto, os principais conceitos teóricos da modelagem de sistemas foram aplicados para compreender e representar o funcionamento da plataforma Netflix. Iniciamos com a modelagem de processos (BPMN), mapeando o fluxo principal do usuário — do login à reprodução do conteúdo — o que possibilitou visualizar o comportamento sequencial do sistema.
+
+A seguir, utilizamos a modelagem UML, incluindo diagramas de classes para estruturar os dados (usuário, título e histórico), definir as funcionalidades e entender as interações entre os componentes. Isso permitiu transformar necessidades reais em representações técnicas.
+
+Além disso, os conceitos de experiência do usuário (UX) e requisitos funcionais e não funcionais foram incorporados para propor melhorias práticas na interface e na performance do sistema. Também discutimos conectividade e interoperabilidade, mostrando como a teoria de sistemas distribuídos se aplica ao funcionamento em diferentes dispositivos.</p>
+  </section>
+
+  <section id="passo9">
+    <h2>Passo 9: Requisitos</h2>
+    <p><strong>Funcionais:</strong> Login, assistir, recomendar, gerenciar perfil,controle de reprodução,alteração de plano de assinatura,cancelamento de conta ou pausa temporária,recebimento de notificação de novos lançamentos,downlod de conteúdo para modo offiline.</p>
+    <p><strong>Não-funcionais:</strong> Segurança: Dados do usuário devem ser criptografados e protegidos,Compatibilidade: deve funcionar em diferentes navegadores,dispositivos e sistemas operacionais,Escalabilidade: deve suportar milhões de usuários simultâneos globalmente,Internacionalização: interface e conteúdo adaptáveis a múltiplos idiomas e regiões.</p>
+  </section>
+
+  <section id="passo10">
+    <h2>Passo 10: Regras de Negócio</h2>
+    <ul>
+      <li>Limites Técnicos: Reprodução simultânea limitada por plano e Qualidade do vídeo (HD,4K) depende do plano contratado.</li>
+      <li>Download offline: Os downloads têm prazo de expiração e há limites de quantos títulos podem ser baixados simultaneamente.</li>
+      <li>Controle de perfil infantil: Restrição automática de conteúdo não apropriado,baseado na classificação indicativa.</li>
+      <li>Regras de Algoritmo: Histórico influencia diretamente nas sugestões e é tratado como dado pessoal.</li>
+
+    </ul>
+  </section>
+
+  <section id="conclusao">
+    <h2>Conclusão</h2>
+    <p>Através da análise do sistema Netflix, foi possível compreender como a modelagem de processos e a organização de dados contribuem para uma experiência eficiente e personalizada, reforçando a importância do design centrado no usuário e da integração tecnológica em sistemas modernos.</p>
+  </section>
+</body>
+</html>
+
